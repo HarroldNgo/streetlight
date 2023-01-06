@@ -1,0 +1,19 @@
+/*animation: 1.5s ease-out 0s 1 slideInFromLeft;*/
+.sections{
+    margin: auto 50px;
+    text-transform: uppercase;
+}
+
+.sections .category-title{
+    padding: 10px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+

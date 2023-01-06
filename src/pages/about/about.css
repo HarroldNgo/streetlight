@@ -1,0 +1,13 @@
+.aboutus{
+    margin: 0px 500px;
+    text-align: center;
+    border: 1px solid black;
+}
+.about-title{
+    padding: 10px;
+    font-size: 2em;
+}
+.about-desc{
+    padding: 10px;
+    font-size: 1.2em;
+}

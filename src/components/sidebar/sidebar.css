@@ -1,0 +1,18 @@
+.left-sidebar {
+    flex: 2;
+    background: #CCCCCC;
+}
+.left-sidebar ul {
+    padding: 20px;
+}
+.left-sidebar li{
+    padding: 20px;
+}
+.left-sidebar a{
+    width: 100%;
+    padding: 20px;
+    font-size: 1.4em;
+}
+.left-sidebar a:hover{
+    background: #AAAAAA;
+}

@@ -1,0 +1,80 @@
+.header{
+    width: 100%;
+    position: relative;
+    top: 0;
+    align-items: center;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2px 60px;
+    gap: 20px;
+    position: relative;
+}
+.socials img{
+    width: 30px;
+}
+.title{
+    display: grid;
+    text-align: center;
+    letter-spacing: 7px;
+    font-size: 27px;
+    letter-spacing: 10px;
+    padding: 20px;
+    color: #e3b721;
+    border: 1px solid #cccccc;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.latest {
+    background-color: black;
+    color: #e3b721;
+    padding: 0px 20px;
+    padding-top: 4px;
+    margin: 15px 20px;
+   font-size: 1.1em;
+   letter-spacing: 2px;
+}
+.nav ul{
+    display: flex;
+    gap: 2em;
+    font-size: 16px;
+    padding-right: 50px;
+
+}
+.nav ul li{
+    position: relative;
+}
+.nav ul li:hover{
+    background: #EEEEEE;
+    transition: 0.5s;
+}
+.nav ul li:hover ul{
+    display: block;
+}
+.nav ul li a{
+   display: block;
+   padding: 15px;
+   font-size: 1.2em;
+   font-weight: bold;
+   letter-spacing: 2px;
+}
+.nav ul li ul {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 0px;
+    top: 52px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+} 
+.nav ul li ul li a{  
+    font-size: 1.1em;
+}
+.nav ul li ul li:hover{
+    background: #EEEEEE;
+}

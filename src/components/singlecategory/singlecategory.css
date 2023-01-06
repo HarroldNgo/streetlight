@@ -1,0 +1,22 @@
+.category-wrapper{
+    padding: 10px 0px;
+}
+
+.subtitle{
+    padding: 10px;
+
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.inside-category{
+    flex: 0 0 auto;
+}
+
+.category-image{
+    width: 200px;
+    margin-right: 50px;
+}
