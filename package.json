@@ -41,7 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://streetlight-api.onrender.com",
   "devDependencies": {
     "@types/jquery": "^3.5.16"
   }

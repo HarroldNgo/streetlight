@@ -2,7 +2,7 @@ import './add.css'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Toggle from '../../components/toggle/Toggle'
 import DropDown from '../../components/dropdown/DropDown'
-import axios from 'axios'
+import axios from "../../api/axios"
 import { useRef, useState } from 'react'
 
 export default function AddPost() {

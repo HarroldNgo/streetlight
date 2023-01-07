@@ -1,7 +1,7 @@
 import './login.css'
 import { useRef, useState, useEffect } from 'react';
 import useAuth from '../../hooks/useAuth'
-import axios from 'axios'
+import axios from "../../api/axios"
 import {useNavigate } from 'react-router-dom'
 
 export default function Login() {

@@ -2,7 +2,7 @@ import './manageposts.css'
 import { useEffect, useState } from "react"
 import Toggle from '../toggle/Toggle'
 import { Link } from 'react-router-dom'
-import axios from "axios"
+import axios from "../../api/axios"
 
 export default function ManagePosts() {
   const [posts, setPosts] = useState([]);

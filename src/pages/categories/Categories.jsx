@@ -2,7 +2,7 @@ import "./categories.css"
 import Header from "../../components/header/Header"
 import SingleCategory from "../../components/singlecategory/SingleCategory"
 import { useEffect, useState } from "react"
-import axios from "axios";
+import axios from "../../api/axios"
 import {useLocation} from "react-router"
 
 export default function Categories() {

@@ -3,7 +3,7 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import Toggle from '../../components/toggle/Toggle'
 import DropDown from '../../components/dropdown/DropDown'
 import { useLocation } from "react-router";
-import axios from 'axios'
+import axios from "../../api/axios"
 import { useEffect, useState } from 'react'
 
 

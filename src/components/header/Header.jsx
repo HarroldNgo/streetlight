@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./header.css"
-import axios from "axios"
+import axios from "../../api/axios"
 import { useEffect, useState } from "react"
 
 export default function Header() {

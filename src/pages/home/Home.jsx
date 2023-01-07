@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import Header from "../../components/header/Header"
 import Slider from "../../components/slider/Slider"
 import "./home.css"
-import axios from "axios"
+import axios from "../../api/axios"
 
 export default function Home() {
   const [posts, setPosts] = useState([]);

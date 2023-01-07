@@ -1,6 +1,6 @@
 import './dropdown.css'
 import { useState, useEffect } from 'react'
-import axios from 'axios'
+import axios from "../../api/axios"
 
 export default function DropDown({ selected, setSelected }) {
     const [isActive, setIsActive] = useState(false)

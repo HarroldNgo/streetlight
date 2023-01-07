@@ -1,7 +1,7 @@
 import './edit.css'
 import Sidebar from '../../components/sidebar/Sidebar'
 import { useLocation } from "react-router";
-import axios from 'axios'
+import axios from "../../api/axios"
 import { useEffect, useState } from 'react'
 
 

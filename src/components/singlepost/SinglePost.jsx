@@ -1,5 +1,5 @@
 import "./singlepost.css";
-import axios from "axios";
+import axios from "../../api/axios"
 import { useLocation } from "react-router";
 import { useEffect, useState } from "react";
 

@@ -1,6 +1,6 @@
 import './add.css'
 import Sidebar from '../../components/sidebar/Sidebar'
-import axios from 'axios'
+import axios from "../../api/axios"
 import { useState } from 'react'
 
 export default function AddCat() {
