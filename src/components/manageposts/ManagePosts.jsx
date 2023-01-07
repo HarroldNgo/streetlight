@@ -6,6 +6,7 @@ import axios from "../../api/axios"
 
 export default function ManagePosts() {
   const [posts, setPosts] = useState([]);
+  const PF = "https://streetlight-api.onrender.com/images/"
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -36,8 +37,10 @@ export default function ManagePosts() {
           <thead>
             <tr>
               <th>#</th>
+              <th>Image</th>
               <th>Title</th>
               <th>Featured</th>
+              <th>Coming Soon</th>
               <th colSpan="3">Action</th>
             </tr>
           </thead>
@@ -45,9 +48,13 @@ export default function ManagePosts() {
             {posts.map((p, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>
-                <td>{p.title}</td>
+                <td><img className='table-image' alt='' src={PF + p.photo}/></td>
+                <td><Link to={`/post/${p._id}`}>{p.title}</Link></td>
                 <td><label className='toggle'>
                 <Toggle isToggled={p.frontpage} onToggle={()=>{}}/>
+                </label></td>
+                <td><label className='toggle'>
+                <Toggle isToggled={p.comingsoon} onToggle={()=>{}}/>
                 </label></td>
                 <td><Link className='edit' to={`/admin/edit/${p._id}`}>Edit</Link></td>
                 <td><button className="delete" onClick={async () => {

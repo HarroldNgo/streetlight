@@ -1,17 +1,16 @@
 .left-sidebar {
-    flex: 2;
+    flex: 1;
     background: #CCCCCC;
 }
 .left-sidebar ul {
-    padding: 20px;
-}
-.left-sidebar li{
-    padding: 20px;
+    padding: 25px;
 }
 .left-sidebar a{
+    margin: 20px 0px;
+    display: block;
+    padding: 5px;
     width: 100%;
-    padding: 20px;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .left-sidebar a:hover{
     background: #AAAAAA;

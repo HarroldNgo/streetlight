@@ -3,7 +3,7 @@
     display: flex;
 }
 .admin-content {
-    flex:8;
+    flex:9;
 }
 .admin-content .button-group{
     padding: 20px;

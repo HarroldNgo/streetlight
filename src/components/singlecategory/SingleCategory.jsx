@@ -17,8 +17,7 @@ export default function SingleCategory({ cat }) {
 
     return (
         (posts.length === 0 ?
-            <div className="category-wrapper">
-            </div>
+            ""
             : <div className="category-wrapper">
                 <h2 className="subtitle">{cat.name}</h2>
                 <div className="categories">

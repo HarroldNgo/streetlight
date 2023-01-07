@@ -14,10 +14,11 @@ export default function EditPost() {
   const [file, setFile] = useState(null)
   const [frontpage, setFrontPage] = useState(false);
   const [categories, setCategories] = useState("")
-
+  const date = Date.now();
   const location = useLocation();
   const path = location.pathname.split("/")[3];
   const [post, setPost] = useState({});
+  const [comingsoon, setComingSoon] = useState(false);
 
 
 
@@ -31,6 +32,7 @@ export default function EditPost() {
       setBody(res.data.body)
       setFrontPage(res.data.frontpage)
       setCategories(res.data.categories)
+      setComingSoon(res.data.comingsoon)
     };
     getPost();
   }, [path]);
@@ -42,25 +44,33 @@ export default function EditPost() {
       desc,
       body,
       frontpage,
+      comingsoon,
       categories,
-  };
+    };
     if (file) {
       const data = new FormData();
-      const filename = Date.now() + file.name;
+      const filename = date + file.name;
       data.append("name", filename);
       data.append("file", file);
       updatedPost.photo = filename
       try {
         await axios.post("/api/upload", data)
       } catch (err) { console.log(data) }
-      try{
+      try {
         await axios.delete("/api/files/" + post.photo)
-      }catch(err){console.log("del error")}
+      } catch (err) { console.log("del error") }
     }
     try {
       await axios.put("/api/posts/" + post._id, updatedPost)
-      window.location.replace("/post/"+post._id);
-    } catch (err) { }
+      window.location.replace("/post/" + post._id);
+    } catch (err) {
+      if (file) {
+        const filename = date + file.name;
+        try {
+          await axios.delete("/api/files/" + filename)
+        } catch (err) { console.log("del error" + filename) }
+      }
+    }
   }
   return (
     <div className="adminpage">
@@ -116,6 +126,10 @@ export default function EditPost() {
           <div className="writeFormGroup">
             <h3>Featured:</h3>
             <Toggle isToggled={frontpage} onToggle={() => setFrontPage(!frontpage)} />
+          </div>
+          <div className="writeFormGroup">
+            <h3>Coming Soon:</h3>
+            <Toggle isToggled={comingsoon} onToggle={() => setComingSoon(!comingsoon)} />
           </div>
           <button className="btn btn-big" type='submit'><h3>Update</h3></button>
         </form>

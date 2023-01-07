@@ -1,5 +1,11 @@
+
+.about-page-wrapper{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
 .aboutus{
-    margin: 0px 500px;
+    width: 30%;
     text-align: center;
     border: 1px solid black;
 }
