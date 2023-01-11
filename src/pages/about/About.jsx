@@ -7,8 +7,18 @@ export default function About() {
             <Header />
             <div className="about-page-wrapper">
                 <div className="aboutus">
-                    <h1 className='about-title'>About Us</h1>
-                    <p className='about-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit, metus id facilisis ultricies, velit diam auctor est, sit amet interdum magna arcu sit amet sem. Ut varius urna vitae lorem convallis feugiat. Vestibulum consectetur nisi id libero tincidunt egestas. Nulla sit amet metus nisl. Morbi eu erat rutrum arcu pulvinar vehicula blandit eget lacus. Vivamus interdum orci ligula, nec mollis mauris scelerisque vitae. Mauris risus nisi, rhoncus eget dolor eget, interdum placerat lectus. Nullam iaculis metus nisi, vel convallis augue fringilla semper. Maecenas aliquam dictum ligula eu imperdiet. Ut non nisl vel elit gravida finibus in vitae ante. Etiam cursus ipsum quis venenatis ultrices. Curabitur porta metus rutrum diam finibus consectetur.</p>
+                    <h1 className='about-title'><span className='welcome'>Welcome to </span><span className='streetlight'>Streetlight</span></h1>
+                    <p className='about-desc'>"Yeah, I'm a streetlight
+                        <br/>&nbsp;&nbsp;Chilling in the heat
+                        <br/>&nbsp;&nbsp;I illuminate the stories of the people in the street
+                        <br/>&nbsp;&nbsp;Some have happy endings
+                        <br/>&nbsp;&nbsp;Some are bittersweet
+                        <br/>&nbsp;&nbsp;But I know them all
+                        <br/>&nbsp;&nbsp;And that's what makes my life complete."</p>
+                    <p className='about-credit'>- Usnavi, In the Heights writ. Lin-Manuel Miranda</p>
+                </div>
+                <div className='about-image'>
+                    <img src="" alt="" />
                 </div>
             </div>
         </div>

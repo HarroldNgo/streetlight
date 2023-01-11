@@ -3,10 +3,8 @@
     position: relative;
 }
 
-.post-wrapper .post .slider-image {
-    width: 100%;
-}
 .slick-initialized { overflow: hidden; }
+
 .slick-slide>div {
     margin: 0 25px;
 }
@@ -19,16 +17,21 @@
 
 .slider-image,
 .slider-link {
+    width: 100%;
     opacity: 1;
     transition: 1s ease-in;
     transition: 0.5s ease-out;
 }
+.grey{
+    filter: grayscale(100%);
+}
 
 .post {
     position: relative;
-    margin: 20px;
     width: 100%;
+    margin: 20px;
     background-color: black;
+    border: 1px solid red;
 }
 
 .middle {

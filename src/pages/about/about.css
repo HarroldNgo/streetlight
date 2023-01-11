@@ -5,15 +5,31 @@
     justify-content: center;
 }
 .aboutus{
-    width: 30%;
-    text-align: center;
-    border: 1px solid black;
+    width: 40%;
+    text-align: left;
 }
 .about-title{
     padding: 10px;
-    font-size: 2em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .about-desc{
     padding: 10px;
-    font-size: 1.2em;
+    margin-left: 20px;
+    font-size: 1.1em;
+    white-space: pre-line;
+    color: #333333;
+    line-height: 2em;
+}
+.about-credit {
+    font-size: 0.8em;
+    margin-left: 20px;
+    color: #333333;
+}
+.welcome {
+    text-decoration: underline;
+}
+.streetlight {
+    color: #efbf24;
 }

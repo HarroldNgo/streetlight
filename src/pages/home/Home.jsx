@@ -18,7 +18,9 @@ export default function Home() {
     <>
     <div className="home">
     <Header/>
-    <Slider posts ={posts}/>
+    <Slider posts ={posts}>
+    </Slider>
+    <p className="copyright">copyright streetlight 2023 // contact</p>
     </div>
     </>
   )

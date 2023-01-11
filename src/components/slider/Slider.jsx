@@ -13,7 +13,7 @@ export default function Slider({ posts }) {
                         <h4 className="hovertitle">{post.title}</h4>
                         <p className="hovertext">{(post.body).split(' ').slice(0, 20).join(" ")}</p>
                     </div>
-                    <img key={i} src={PF + post.photo} alt="" className="slider-image" />
+                    <img key={i} src={PF + post.photo} alt="" className="slider-image grey" />
                 </div>
                 : <div className="post">
                     <div className="middle">
@@ -28,6 +28,7 @@ export default function Slider({ posts }) {
 
         ))))
     }
+
     var settings = {
         initialSlide: Math.floor(Math.random() * 10),
         autoplay: true,
