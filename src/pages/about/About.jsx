@@ -18,7 +18,7 @@ export default function About() {
                     <p className='about-credit'>- Usnavi, In the Heights writ. Lin-Manuel Miranda</p>
                 </div>
                 <div className='about-image'>
-                    <img src="" alt="" />
+                <img src={require("../../components/img/about.png")} alt="about" />
                 </div>
             </div>
         </div>

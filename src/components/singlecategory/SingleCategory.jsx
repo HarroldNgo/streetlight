@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
 
 export default function SingleCategory({ cat }) {
-    const PF = "https://streetlight-api.onrender.com/images/"
+    const PF = "http://localhost:5000/images/"
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {

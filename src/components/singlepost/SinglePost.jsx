@@ -7,7 +7,7 @@ export default function SinglePost() {
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const [post, setPost] = useState({});
-    const PF = "https://streetlight-api.onrender.com/images/"
+    const PF = "http://localhost:5000/images/"
     
     useEffect(()=>{
         const getPost = async ()=>{

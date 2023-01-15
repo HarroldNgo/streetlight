@@ -4,7 +4,7 @@ import SliderR from "react-slick";
 
 export default function Slider({ posts }) {
 
-    const PF = "https://streetlight-api.onrender.com/images/"
+    const PF = "http://localhost:5000/images/"
     function loop(n) {
         return ([...Array(n)].map((e, i) => posts.map((post, j) => (
             (post.comingsoon ?

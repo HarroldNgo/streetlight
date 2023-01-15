@@ -20,8 +20,8 @@ export default function Home() {
     <Header/>
     <Slider posts ={posts}>
     </Slider>
-    <p className="copyright">copyright streetlight 2023 // contact</p>
     </div>
+    <p className="copyright">copyright streetlight 2023 // contact</p>
     </>
   )
 }

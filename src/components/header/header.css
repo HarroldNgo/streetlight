@@ -16,14 +16,21 @@
     width: 30px;
 }
 .title{
-    display: grid;
+    display: flex;
     text-align: center;
-    letter-spacing: 7px;
-    font-size: 27px;
-    letter-spacing: 10px;
+    justify-content: center;
     padding: 20px;
-    color: #e3b721;
+    color: #FFC000;
     border: 1px solid #cccccc;
+}
+.title h1 {
+    letter-spacing: 7px;
+    font-size: 65px;
+    letter-spacing: 10px;
+}
+.title img {
+    width: 90px;
+    margin-right: -5px;
 }
 .nav{
     display: flex;

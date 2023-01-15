@@ -17,19 +17,22 @@
 .about-desc{
     padding: 10px;
     margin-left: 20px;
-    font-size: 1.1em;
+    font-size: 1.3em;
     white-space: pre-line;
     color: #333333;
     line-height: 2em;
 }
 .about-credit {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-left: 20px;
     color: #333333;
+}
+.about-image img{
+    width: 500px;
 }
 .welcome {
     text-decoration: underline;
 }
 .streetlight {
-    color: #efbf24;
+    color: #FFC000;
 }

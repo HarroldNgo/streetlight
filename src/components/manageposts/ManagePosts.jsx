@@ -6,7 +6,7 @@ import axios from "../../api/axios"
 
 export default function ManagePosts() {
   const [posts, setPosts] = useState([]);
-  const PF = "https://streetlight-api.onrender.com/images/"
+  const PF = "http://localhost:5000/images/"
 
   useEffect(() => {
     const fetchPost = async () => {

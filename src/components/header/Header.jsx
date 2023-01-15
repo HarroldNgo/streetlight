@@ -17,13 +17,13 @@ export default function Header() {
     return (
         <div className="header">
             <div className="socials">
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img src={require("../img/insta.png")} alt="instagram" /></a>
                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src={require("../img/twit.png")} alt="twitter" /></a>
+                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img src={require("../img/insta.png")} alt="instagram" /></a>
             </div>
             <div className="title">
-                <h1>
-                    <strong>STREETLIGHT</strong>
-                </h1>
+                <img src={require("../img/titlelogo.png")} alt="titlelogo" />
+                <h1>TREETLIGHT</h1>
+
             </div>
             <div className="nav">
                 <div className="latest-wrap">
@@ -37,7 +37,7 @@ export default function Header() {
                     <li>
                         <Link to="/categories">CATEGORIES</Link>
                         <ul>
-                            {cats.map((c,i) => (
+                            {cats.map((c, i) => (
                                 <li key={i}><Link to={`/categories/?cat=${c.name}`}>{c.name}</Link></li>
                             ))}
                         </ul>
