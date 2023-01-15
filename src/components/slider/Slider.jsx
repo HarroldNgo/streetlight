@@ -4,7 +4,7 @@ import SliderR from "react-slick";
 
 export default function Slider({ posts }) {
 
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://res.cloudinary.com/dmluqp41s/image/upload/"
     function loop(n) {
         return ([...Array(n)].map((e, i) => posts.map((post, j) => (
             (post.comingsoon ?
@@ -13,7 +13,7 @@ export default function Slider({ posts }) {
                         <h4 className="hovertitle">{post.title}</h4>
                         <p className="hovertext">{(post.body).split(' ').slice(0, 20).join(" ")}</p>
                     </div>
-                    <img key={i} src={PF + post.photo} alt="" className="slider-image grey" />
+                    <img key={i} src={PF + post.photo + ".png"} alt="" className="slider-image grey" />
                 </div>
                 : <div className="post">
                     <div className="middle">
@@ -21,7 +21,7 @@ export default function Slider({ posts }) {
                         <p className="hovertext">{(post.body).split(' ').slice(0, 20).join(" ")}</p>
                     </div>
                     <a className="slider-link" key={j} href={`/post/${post._id}`}>
-                        <img key={i} src={PF + post.photo} alt="" className="slider-image" />
+                        <img key={i} src={PF + post.photo + ".png"} alt="" className="slider-image" />
 
                     </a>
                 </div>)

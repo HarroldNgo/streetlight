@@ -7,7 +7,7 @@ export default function SinglePost() {
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const [post, setPost] = useState({});
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://res.cloudinary.com/dmluqp41s/image/upload/"
     
     useEffect(()=>{
         const getPost = async ()=>{
@@ -22,7 +22,7 @@ export default function SinglePost() {
         <div className="singlepost">
             <div className="postimage" id="postimage">
                 {post.photo && (
-                    <img src={PF + post.photo} alt="" className="single-postimage" />
+                    <img src={PF + post.photo + ".png"} alt="" className="single-postimage" />
                 )}
                 <p className="desc">{post.desc}</p>
             </div>

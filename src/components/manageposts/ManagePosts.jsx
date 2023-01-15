@@ -6,7 +6,7 @@ import axios from "../../api/axios"
 
 export default function ManagePosts() {
   const [posts, setPosts] = useState([]);
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://res.cloudinary.com/dmluqp41s/image/upload/"
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -48,7 +48,7 @@ export default function ManagePosts() {
             {posts.map((p, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>
-                <td><img className='table-image' alt='' src={PF + p.photo}/></td>
+                <td><img className='table-image' alt='' src={PF + p.photo+".png"}/></td>
                 <td><Link to={`/post/${p._id}`}>{p.title}</Link></td>
                 <td><label className='toggle'>
                 <Toggle isToggled={p.frontpage} onToggle={()=>{}}/>

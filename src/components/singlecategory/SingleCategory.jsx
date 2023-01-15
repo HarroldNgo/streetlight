@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
 
 export default function SingleCategory({ cat }) {
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://res.cloudinary.com/dmluqp41s/image/upload/"
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function SingleCategory({ cat }) {
                 <div className="categories">
                     {posts.map((p, i) => (
                         (p.comingsoon ? <div key={i} className="inside-category">
-                            <img src={PF + p.photo} alt="" className="category-image" />
+                            <img src={PF + p.photo + ".png"} alt="" className="category-image" />
                         </div>
                             : <div key={i} className="inside-category">
                                 <Link to={`/post/${p._id}`}><img src={PF + p.photo} alt="" className="category-image" /></Link>
