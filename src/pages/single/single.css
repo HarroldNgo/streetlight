@@ -1,4 +1,6 @@
-
+.single{
+    word-wrap: break-word;
+}
 .singlepost{
     display: flex;
     margin: auto;
@@ -14,9 +16,11 @@
     align-self: flex-start;
 }
 .single-postimage{
-    width: 100%;
+    width: 95%;
 }
 .postbody{
+    margin-left: 30px;
+    margin-right: -70px;
     flex: 4;
     padding: 30px;
     font-size: 1.1em;
@@ -27,19 +31,26 @@
 }
 .paragraph{
     font-size: 1.3em;
-    word-break: break-all;
 }
 .desc{
     text-align: center;
     font-size: 1.2em;
 }
 
-
-@keyframes slide {
-    0% {
-      opacity: 0;
+@media only screen and (max-width: 600px){
+    .singlepost{
+        flex-direction: column;
     }
-    100% {
-      opacity: 1;
+    .postimage{
+        position: relative;
+        align-self: center;
+        width: 500px;
     }
-  }
+    .postbody{
+        border: 1px solid blue; 
+        align-self: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        width:  100%;
+    }
+}

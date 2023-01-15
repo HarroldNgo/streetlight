@@ -22,7 +22,6 @@ export default function Slider({ posts }) {
                     </div>
                     <a className="slider-link" key={j} href={`/post/${post._id}`}>
                         <img key={i} src={PF + post.photo + ".png"} alt="" className="slider-image" />
-
                     </a>
                 </div>)
 

@@ -86,3 +86,6 @@
 .nav ul li ul li:hover{
     background: #EEEEEE;
 }
+.cats {
+    display: none;
+}

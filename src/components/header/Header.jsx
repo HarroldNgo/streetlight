@@ -34,7 +34,7 @@ export default function Header() {
                     <li>
                         <Link to="/">HOME</Link>
                     </li>
-                    <li>
+                    <li className="cats">
                         <Link to="/categories">CATEGORIES</Link>
                         <ul>
                             {cats.map((c, i) => (
@@ -42,7 +42,7 @@ export default function Header() {
                             ))}
                         </ul>
                     </li>
-                    <li><Link to="/about">ABOUT US</Link></li>
+                    <li><Link to="/about">ABOUT</Link></li>
                 </ul>
             </div>
         </div>

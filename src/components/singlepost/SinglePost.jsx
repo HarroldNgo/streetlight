@@ -8,16 +8,16 @@ export default function SinglePost() {
     const path = location.pathname.split("/")[2];
     const [post, setPost] = useState({});
     const PF = "https://res.cloudinary.com/dmluqp41s/image/upload/"
-    
-    useEffect(()=>{
-        const getPost = async ()=>{
-            const res = await axios.get("/api/posts/"+path)
+
+    useEffect(() => {
+        const getPost = async () => {
+            const res = await axios.get("/api/posts/" + path)
             setPost(res.data);
         };
         getPost();
     }, [path]);
 
-    
+
     return (
         <div className="singlepost">
             <div className="postimage" id="postimage">
@@ -27,8 +27,8 @@ export default function SinglePost() {
                 <p className="desc">{post.desc}</p>
             </div>
             <div className="postbody">
-            <h1 className="post-title">{post.title}</h1>
-            <p className="paragraph">{post.body}</p>
+                <h1 className="post-title">{post.title}</h1>
+                <p className="paragraph">{post.body}</p>
             </div>
         </div>
     )
