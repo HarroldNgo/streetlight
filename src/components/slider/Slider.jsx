@@ -8,15 +8,15 @@ export default function Slider({ posts }) {
     function loop(n) {
         return ([...Array(n)].map((e, i) => posts.map((post, j) => (
             (post.comingsoon ?
-                <div className="post">
-                    <div className="middle">
+                <div className="spost">
+                    <div className="hover">
                         <h4 className="hovertitle">{post.title}</h4>
                         <p className="hovertext">{(post.body).split(' ').slice(0, 20).join(" ")}</p>
                     </div>
                     <img key={i} src={PF + post.photo + ".png"} alt="" className="slider-image grey" />
                 </div>
-                : <div className="post">
-                    <div className="middle">
+                : <div className="spost">
+                    <div className="hover">
                         <h4 className="hovertitle">{post.title}</h4>
                         <p className="hovertext">{(post.body).split(' ').slice(0, 20).join(" ")}</p>
                     </div>

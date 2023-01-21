@@ -1,40 +1,16 @@
+.home {}
 .post-wrapper {
-    width: 100%;
+    width: 250vh;
     position: relative;
+    overflow: hidden;
 }
-
-.slick-initialized { overflow: hidden; }
-
-.slick-slide>div {
-    margin: 0 25px;
-}
-
-.slick-list {
-    position: relative;
-    margin-left: -25px;
-    margin-right: 15px;
-}
-
-.slider-image,
-.slider-link {
-    width: 100%;
-    opacity: 1;
-    transition: 1s ease-in;
-    transition: 0.5s ease-out;
-}
-.grey{
-    filter: grayscale(100%);
-}
-
-.post {
+.spost {
     position: relative;
     width: 100%;
-    margin: 20px;
-    background-color: black;
-    border: 1px solid red;
-}
+    background: black;
 
-.middle {
+}
+.hover {
     transition: 1s ease-in;
     transition: 0.5s ease-out;
     opacity: 0;
@@ -43,14 +19,7 @@
     height: 100%;
     text-align: center;
     overflow: hidden;
-}
-
-.post:hover .slider-image {
-    opacity: 0.2;
-}
-
-.post:hover .middle {
-    opacity: 1;
+    
 }
 .hovertitle, .hovertext{
     margin: 0px 20px;
@@ -58,4 +27,24 @@
     color: white;
     word-wrap: break-word;
     font-size: 1.8em;
+}
+.slider-image,
+.slider-link {
+    width: 100%;
+    opacity: 1;
+    transition: 1s ease-in;
+    transition: 0.5s ease-out;
+}
+.grey {
+    filter: grayscale(100%);
+}
+
+.spost:hover .slider-image{
+    opacity: 0.2;
+}
+.spost:hover .hover{
+    opacity: 1;
+}
+.slick-slide>div {
+    margin: 0 15px;
 }

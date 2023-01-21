@@ -7,21 +7,21 @@ import axios from "../../api/axios"
 export default function Home() {
   const [posts, setPosts] = useState([]);
 
-  useEffect(()=>{
-    const fetchPost = async ()=>{
+  useEffect(() => {
+    const fetchPost = async () => {
       const res = await axios.get(`/api/posts?frontpage=true`)
       setPosts(res.data)
     }
     fetchPost()
-    },[])
+  }, [])
   return (
     <>
-    <div className="home">
-    <Header/>
-    <Slider posts ={posts}>
-    </Slider>
-    </div>
-    <p className="copyright">copyright streetlight 2023 // contact</p>
+      <div className="home">
+        <Header />
+        <Slider posts={posts}>
+        </Slider>
+        <p className="copyright">copyright streetlight 2023 // contact</p>
+      </div>
     </>
   )
 }

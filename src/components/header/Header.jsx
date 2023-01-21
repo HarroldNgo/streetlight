@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import "./header.css"
 import axios from "../../api/axios"
 import { useEffect, useState } from "react"
 
 export default function Header() {
     const [cats, setCats] = useState([]);
+    const location = useLocation();
 
     useEffect(() => {
         const getCats = async () => {
@@ -17,8 +18,8 @@ export default function Header() {
     return (
         <div className="header">
             <div className="socials">
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src={require("../img/twit.png")} alt="twitter" /></a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img src={require("../img/insta.png")} alt="instagram" /></a>
+                <a href="https://twitter.com/Streetlightca" target="_blank" rel="noopener noreferrer"><img src={require("../img/twit.png")} alt="twitter" /></a>
+                <a href="https://www.instagram.com/streetlightblog/" target="_blank" rel="noopener noreferrer"><img src={require("../img/insta.png")} alt="instagram" /></a>
             </div>
             <div className="title">
                 <img src={require("../img/titlelogo.png")} alt="titlelogo" />
@@ -26,9 +27,13 @@ export default function Header() {
 
             </div>
             <div className="nav">
-                <div className="latest-wrap">
-                    <p className="latest">LATEST</p>
-                </div>
+                {location.pathname==='/' ?
+                    <div className="latest-wrap">
+                        <p className="latest">LATEST</p>
+                    </div> : <div className="latest-wrap" style={{opacity: 0}}>
+                        <p className="latest">LATEST</p>
+                    </div>
+                    }
 
                 <ul>
                     <li>
