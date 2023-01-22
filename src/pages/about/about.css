@@ -7,6 +7,7 @@
 .aboutus{
     width: 40%;
     text-align: left;
+    margin-bottom: 20px;
 }
 .about-title{
     padding: 10px;
@@ -36,3 +37,31 @@
 .streetlight {
     color: #FFC000;
 }
+@media screen and (max-width: 1024px) {
+    .about-page-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutus{
+        width: 550px;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+
+  }
+  @media screen and (max-width: 550px) {
+    .about-image img{
+        width: 100%;
+    }
+    .aboutus{
+        width: 100%;
+    }
+    .about-desc{
+    }
+    .about-credit {
+        font-size: 0.9em;
+        margin-left: 20px;
+        color: #333333;
+    }
+
+  }

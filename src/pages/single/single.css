@@ -1,56 +1,69 @@
 .single{
-    word-wrap: break-word;
 }
 .singlepost{
     display: flex;
+    justify-content: center;
     margin: auto;
-    width: 80%;
+    width: 90%;
     margin-bottom: 50px;
     animation: 1.5s ease-out 0s 1 slide;
 }
 
 .postimage{
-    flex: 6;
+    width: 1000px;
+    margin: 0px 38px;
     position: sticky;
     top: 20px;
     align-self: flex-start;
 }
 .single-postimage{
-    width: 95%;
+    width: 100%;
 }
 .postbody{
-    margin-left: 30px;
-    margin-right: -70px;
-    flex: 4;
+    width: 60%;
     padding: 30px;
-    font-size: 1.1em;
 }
 .post-title{
     text-align: center;
     padding: 20px;
+    white-space:nowrap;
+    font-size: 2vw;
 }
 .paragraph{
     font-size: 1.3em;
 }
 .desc{
     text-align: center;
+    white-space: pre-wrap;
     font-size: 1.2em;
+    width: 100%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1024px){
     .singlepost{
         flex-direction: column;
     }
     .postimage{
         position: relative;
         align-self: center;
-        width: 500px;
+        width: 80%;
     }
     .postbody{
-        border: 1px solid blue; 
         align-self: center;
         margin-left: 0px;
         margin-right: 0px;
         width:  100%;
     }
+    .post-title{
+        font-size: 3vw;
+    }
 }
+@media screen and (max-width: 550px) {
+    .post-title{
+        font-size: 4vw;
+    }
+    .paragraph{
+        font-size: 4vw;
+    }
+
+  }
