@@ -18,4 +18,10 @@
     margin-top: 10px;
     margin-bottom: 80px;
   }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }

@@ -14,7 +14,7 @@ export default function SingleCategory({ cat }) {
         }
         fetchPost()
     }, [cat.name])
-
+    
     return (
         (posts.length === 0 ?
             ""

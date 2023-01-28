@@ -4,6 +4,9 @@
     position: relative;
     overflow: hidden;
 }
+.mobile {
+    display: none;
+}
 .spost {
     position: relative;
     width: 100%;
@@ -27,6 +30,8 @@
     color: white;
     word-wrap: break-word;
     font-size: 1.8em;
+    text-align: center;
+    white-space: pre-wrap; 
 }
 .slider-image,
 .slider-link {
