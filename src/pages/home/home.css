@@ -11,6 +11,9 @@
   padding: 10px 0;
   width: 80%;
 }
+.mobile{
+  display: none;
+}
 
 @media screen and (max-width: 550px) {
   .post-wrapper {
@@ -18,10 +21,16 @@
     margin-top: 10px;
     margin-bottom: 80px;
   }
-  .desktop {
+  .desktop{
     display: none;
   }
-  .mobile {
-    display: block;
+  .mobile{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 95%;
+    margin-top: 10px;
+  }
+  .spost{
+    margin: 10px 0px;
   }
 }

@@ -20,7 +20,6 @@ export default function Header() {
     return (
         <div className="header">
             <div className="socials">
-                <a href="https://twitter.com/Streetlightca" target="_blank" rel="noopener noreferrer"><img src={require("../img/twit.png")} alt="twitter" /></a>
                 <a href="https://www.instagram.com/streetlightblog/" target="_blank" rel="noopener noreferrer"><img src={require("../img/insta.png")} alt="instagram" /></a>
             </div>
             <div className="title">
