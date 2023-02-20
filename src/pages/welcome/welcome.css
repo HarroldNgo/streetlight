@@ -1,0 +1,39 @@
+.welcome-outer{
+
+}
+.welcome-container{
+
+}
+.welcome-title{
+
+}
+.welcome-img{
+    width: 400px;
+}
+.welcome-home{
+
+}
+.welcome-about{
+
+}
+@media screen and (max-width: 550px) {
+    .welcome-outer{
+    }
+    .welcome-container{
+
+    }
+    .welcome-title{
+        width: 100%;
+        text-align: center;
+        font-size: 16vw;
+    }
+    .welcome-img{
+        width: 300px;
+    }
+    .welcome-home{
+    
+    }
+    .welcome-about{
+    
+    }
+  }
