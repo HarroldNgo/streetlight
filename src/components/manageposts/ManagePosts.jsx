@@ -21,9 +21,6 @@ export default function ManagePosts() {
       await axios.delete("/api/posts/" + post._id)
       window.location.reload();
     } catch (err) {console.log("del error")}
-    try{
-      await axios.delete("/api/files/" + post.photo)
-    }catch(err){console.log("del error")}
   }
 
   return (

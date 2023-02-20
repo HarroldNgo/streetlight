@@ -52,24 +52,17 @@ export default function EditPost() {
       const filename = date + file.name;
       data.append("name", filename);
       data.append("file", file);
+      data.append("cloud_name", "dmluqp41s");
+      data.append("upload_preset","g7k415ao");
+      data.append("public_id",filename);
       updatedPost.photo = filename
-      try {
-        await axios.post("/api/upload", data)
-      } catch (err) { console.log(data) }
-      try {
-        await axios.delete("/api/files/" + post.photo)
-      } catch (err) { console.log("del error") }
+      await axios.post("https://api.cloudinary.com/v1_1/dmluqp41s/image/upload", data).then((response)=>console.log(response));
     }
     try {
       await axios.put("/api/posts/" + post._id, updatedPost)
       window.location.replace("/post/" + post._id);
     } catch (err) {
-      if (file) {
-        const filename = date + file.name;
-        try {
-          await axios.delete("/api/files/" + filename)
-        } catch (err) { console.log("del error" + filename) }
-      }
+      console.log(err)
     }
   }
   return (

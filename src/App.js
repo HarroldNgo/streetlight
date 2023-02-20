@@ -2,6 +2,7 @@
 
 import Home from "./pages/home/Home"
 import Single from "./pages/single/Single"
+import Welcome from "./pages/welcome/Welcome"
 import Categories from "./pages/categories/Categories"
 import About from "./pages/about/About"
 import Login from "./pages/login/Login"
@@ -31,6 +32,7 @@ function App() {
         <Route path="categories" element={<Categories />} />
         <Route path="post/:postId" element={<Single />} />
         <Route path="about" element={<About />} />
+        <Route path="welcome" element={<Welcome />} />
 
         {/* admin routes */}
         <Route element={<RequireAuth />}>
