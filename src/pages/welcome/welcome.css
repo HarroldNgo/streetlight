@@ -1,6 +1,7 @@
+
 .welcome-outer {
     background: #e8e8e8;
-    height: 200vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 
@@ -35,6 +36,9 @@
 }
 
 @media screen and (max-width: 550px) {
+    .welcome-outer{
+        height: 130vh;
+    }
     .welcome-text {
         font-size: 5vw;
     }
