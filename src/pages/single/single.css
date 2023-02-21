@@ -29,6 +29,7 @@
 }
 .paragraph{
     font-size: 1.3em;
+    line-height: 150%;
 }
 .desc{
     text-align: center;

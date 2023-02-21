@@ -7,6 +7,28 @@
 .sections .category-title{
     padding: 10px;
 }
+.categories-outer{
+}
+.new-category-wrapper{
+  border: 1px solid red;
+  pointer-events: none;
+}
+.new-category-wrapper:has(.c1:hover){
+  background: red;
+}
+.new-category-wrapper:has(.c2:hover){
+  background: blue;
+}
+.new-category-wrapper:has(.c3:hover){
+  background: green;
+}
+.category{
+  font-size: 30px;
+  margin: 20px;
+}
+.c1, .c2, .c3{
+  pointer-events: auto;
+}
 
 @keyframes slideInFromLeft {
     0% {

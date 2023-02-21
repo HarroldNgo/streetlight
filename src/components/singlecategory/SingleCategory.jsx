@@ -26,7 +26,7 @@ export default function SingleCategory({ cat }) {
                             <img src={PF + p.photo + ".png"} alt="" className="category-image" />
                         </div>
                             : <div key={i} className="inside-category">
-                                <Link to={`/post/${p._id}`}><img src={PF + p.photo} alt="" className="category-image" /></Link>
+                                <Link to={`/post/${p._id}`}><img src={PF + p.photo + ".png"} alt="" className="category-image" /></Link>
                             </div>)
 
                     ))}

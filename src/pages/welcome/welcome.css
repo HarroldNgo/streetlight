@@ -1,39 +1,45 @@
-.welcome-outer{
+.welcome-outer {
+    background: #e8e8e8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 
 }
-.welcome-container{
 
+.welcome-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.welcome-title{
 
+.welcome-text {
+    font-size: 2.5vw;
+    line-height: 170%;
+    text-align: left;
+    letter-spacing: 5px;
 }
-.welcome-img{
-    width: 400px;
-}
-.welcome-home{
 
+.welcome-img {
+    width: 200px;
 }
-.welcome-about{
 
+.link {
+    color: #e3b721;
 }
+
+@media screen and (max-width: 1024px) {
+    .welcome-text {
+        font-size: 3vw;
+    }
+}
+
 @media screen and (max-width: 550px) {
-    .welcome-outer{
+    .welcome-text {
+        font-size: 5vw;
     }
-    .welcome-container{
 
+    .welcome-img {
+        width: 200px;
     }
-    .welcome-title{
-        width: 100%;
-        text-align: center;
-        font-size: 16vw;
-    }
-    .welcome-img{
-        width: 300px;
-    }
-    .welcome-home{
-    
-    }
-    .welcome-about{
-    
-    }
-  }
+}

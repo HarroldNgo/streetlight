@@ -28,11 +28,11 @@ function App() {
       <Route path="/" element={<Layout />}>
         {/* public routes */}
         <Route path="loginadmin" element={<Login />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Welcome />} />
+        <Route path="home" element={<Home />} />
         <Route path="categories" element={<Categories />} />
         <Route path="post/:postId" element={<Single />} />
         <Route path="about" element={<About />} />
-        <Route path="welcome" element={<Welcome />} />
 
         {/* admin routes */}
         <Route element={<RequireAuth />}>
