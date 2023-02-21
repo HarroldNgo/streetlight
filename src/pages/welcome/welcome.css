@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 550px) {
     .welcome-outer{
-        height: 130vh;
+        height: 100%;
     }
     .welcome-text {
         font-size: 5vw;
